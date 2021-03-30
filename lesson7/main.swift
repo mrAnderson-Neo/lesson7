@@ -7,7 +7,7 @@
 
 import Foundation
 
-
+//
 enum TypeError: Error {
     case invalidSelection
     case outOfStocks (count: Int)
@@ -71,7 +71,7 @@ class Shop {
     
 }
 
-
+//
 extension Shop {
     
     func fillInTheProductMap() {
@@ -97,6 +97,7 @@ extension Shop {
     }
     
 }
+//
 
 func trySell(_ nameProduct: String, count: Int) {
     do {
@@ -117,13 +118,13 @@ arrProduct.append(Product(name: "Armchair", price: 107.9, count: 3))
 var shop = Shop(listOfGoods: arrProduct)
 shop.fillInTheProductMap()
 
-for (key, value) in shop.mapOfProducts {
-    print("key \(key) value \(value)")
-}
+//for (key, value) in shop.mapOfProducts {
+//    print("key \(key) value \(value)")
+//}
 
 trySell("Билибирда", count: 10)
 trySell("Spoon", count: 7)
 trySell("Armchair", count: 2)
 
-
+//
 
